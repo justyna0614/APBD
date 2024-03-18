@@ -18,13 +18,13 @@ class Program
 
     public static int Avg(int[]arr)
     {
-        int sum = 0;
+        int suma = 0;
         int size = arr.Length;
         foreach (int number in arr)
         {
-            sum +=  number;
+            suma +=  number;
         }
-        return sum / size;
+        return suma / size;
     }
 
     public static int Max(int[] arr)
