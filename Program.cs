@@ -9,9 +9,11 @@ class Program
         string name = Console.ReadLine()!;
         Console.WriteLine($"Hello, {name}!");
 
-        int[] numbers = { 2, 4, 6};
+        int[] numbers = { 2, 6, 4};
         int avg = Avg(numbers);
+        int max = Max(numbers);
         Console.WriteLine($"AVG= {avg}");
+        Console.WriteLine($"MAX= {max}");
     }
 
     public static int Avg(int[]arr)
@@ -23,5 +25,18 @@ class Program
             sum +=  number;
         }
         return sum / size;
+    }
+
+    public static int Max(int[] arr)
+    {
+        int max = 0;
+        foreach (int number in arr)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+        }
+        return max;
     }
 }
