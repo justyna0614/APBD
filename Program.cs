@@ -18,6 +18,7 @@ class Program
 
     public static int Avg(int[]arr)
     {
+<<<<<<< HEAD
         int result = 0;
         int size = arr.Length;
         foreach (int number in arr)
@@ -25,6 +26,15 @@ class Program
             result +=  number;
         }
         return result / size;
+=======
+        int suma = 0;
+        int size = arr.Length;
+        foreach (int number in arr)
+        {
+            suma +=  number;
+        }
+        return suma / size;
+>>>>>>> feature-new
     }
 
     public static int Max(int[] arr)
